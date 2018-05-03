@@ -1,0 +1,241 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.header {
+    height: 3.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__top {
+    background: #ffffff;
+}
+
+.header__medium__links__list {
+    padding: 1rem 0;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    max-width: 1240px;
+    text-transform: uppercase;
+}
+
+.header__medium__links__list__item {
+    padding: 0 0.8rem;
+}
+
+.header__medium__links__list__item a {
+    color: #1b5793;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.header__low__list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.header__low__list__item {
+    padding: 0 0.8rem;
+}
+
+.header__low__list__item:nth-child(1) a {
+    color: #1b5793;
+}
+
+.header__low__list__item:nth-child(2) {}
+
+.header__low__list a {
+    text-decoration: none;
+}
+
+.button {
+    padding: 1.2rem 1.8rem;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background: red;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.button--telephone {
+    padding: 1.2rem 0.7rem;
+}
+
+.main-top {
+    padding-top: 2rem;
+    background: url("../images/main-top-bg.jpg");
+    background-size: cover;
+    max-height: 45rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-top__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+.main-top__title span {
+    font-weight: bold;
+}
+
+.main-top__img {}
+
+.main-top__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-top__list__item {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    align-items: center;
+    text-align: center;
+    font-weight: 300;
+}
+
+.main-top__button {
+    padding-top: 4rem;
+}
+
+.main-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-services__top {
+    margin-top: 10rem;
+    background: #0d4f96;
+    min-height: 40rem;
+    padding: 4rem 5rem;
+    line-height: 0.8;
+}
+
+.main-services__top__title {
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 2.5rem;
+}
+
+.main-services__icons {
+    padding-top: 2rem;
+    color: white;
+}
+
+.main-services__icons ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-services__icons__item {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    font-weight: 500;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-services__icons__item img {
+    padding-bottom: 1rem;
+}
+
+.main-services__flags ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.main-services__flags__item {
+  padding: 2rem 0;
+}
+
+.main-services__flags__item  {
+    line-height: 1.1;
+    background: white;
+    width: 12rem;
+    height: 30rem;
+}
+
+.main-services__flags__item ul {
+      display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+      list-style-type: none;
+
+}
+
+.main-services__flags__item ul li {
+    color: rgb(41, 39, 39);
+    font-size: 1rem;
+
+    padding: 0 0.5rem;
+
+
+}
+
+.main-services__flags__item ul li img {
+  padding: 0 0.4rem;
+}
+
+.main-services__flags__item__text {
+  text-align: center;
+  padding: 1.2rem 0;
+  line-height: 1.1;
+  color: #333333;
+}

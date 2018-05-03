@@ -1,0 +1,67 @@
+@media screen and (max-width: 1160px) {
+  .services-menu .menu {
+    flex-wrap: wrap;
+  }
+  .page__competence .competence-ls {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .toggle {
+    display: block;
+  }
+  .page__header__menu {
+    width: 100%;
+    flex-direction: column;
+    display: none;
+  }
+  .page__header__menu a {
+    margin: 1rem 0;
+  }
+  .page__header__logo {
+    /* display: none; */
+    text-align: center;
+  }
+  .page__header__buttons {
+    /* display: none; */
+  }
+  .header-content {
+    flex-direction: column;
+  }
+  .active {
+    display: flex;
+  }
+  .slider-menu {
+    flex-direction: column;
+  }
+  .advantages-ls {
+    flex-direction: column;
+  }
+  .tariff-title-list {
+    flex-direction: column;
+  }
+  .tariff-menu-list {
+    flex-direction: column;
+  }
+  .menu {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .page__competence .competence-item {
+    flex-direction: column;
+  }
+  .page__tariff-main .tariff-main-title2, .page__tariff-head .tariff-head-title2 {
+    margin-left: 0;
+  }
+  .page__work-order .order-item {
+    flex-direction: column;
+    /* flex: 0; */
+  }
+
+  .left-circle, .line, .right-circle {
+    display: none;
+  }
+}
