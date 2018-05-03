@@ -17,6 +17,27 @@
 <body class="page">
   <header class="page__header">
     <div class="header-content">
+      <div class="mobile__logo">
+        <div class="menu menu-between">
+          <div class="logo">
+            <a href="#">
+              <img src="images/logo.png" alt="" class="logo__img">
+            </a>
+          </div>
+          <div class="toggle text-right">
+            <div class="container">
+              <i class="fa fa-bars xl-size dark-blue"></i>
+            </div>
+          </div>
+          <div class="page__header__menu header-menu-mobile">
+            <a href="#" class="link link_menu light-blue text-xs upper ">Услуги</a>
+            <a href="#" class="link link_menu light-blue text-xs upper ">Цены</a>
+            <a href="#" class="link link_menu light-blue text-xs upper ">Порядок работы</a>
+            <a href="#" class="link link_menu light-blue text-xs upper ">Команда</a>
+            <a href="#" class="link link_menu light-blue text-xs upper  ">Ответы на вопросы</a>
+          </div>
+        </div>
+      </div>
       <div class="page__header__logo">
         <div class="logo">
           <a href="#">
@@ -24,16 +45,9 @@
           </a>
         </div>
       </div>
-      <!-- <div class="container"> -->
-      <div class="toggle text-right">
-        <div class="container">
-          <i class="fa fa-bars xl-size dark-blue"></i>
-        </div>
 
-      </div>
-      <!-- </div> -->
 
-      <div class="page__header__menu menu ">
+      <div class="page__header__menu menu header-menu-desktop ">
         <a href="#" class="link link_menu light-blue text-xs upper ">Услуги</a>
         <a href="#" class="link link_menu light-blue text-xs upper ">Цены</a>
         <a href="#" class="link link_menu light-blue text-xs upper ">Порядок работы</a>
@@ -49,7 +63,9 @@
   <script>
     $(() => {
       $('.toggle').click(() => {
-        $('.page__header__menu').toggleClass('active');
+        console.log('toggle');
+        $('.header-menu-mobile').toggleClass('active');
+        
       })
     });
   </script>
@@ -110,7 +126,7 @@
         <div class="menu menu-around ">
 
           <div class="link-menu link-container center ">
-            <div class="menu menu-vert width-s">
+            <div class="menu menu-vert container-xs">
               <i class="far fa-clock font-icon font-icon-xl blue icon-xl"></i>
               <span class="xl-size  dotted white bold">Разовые работы</span>
             </div>
@@ -147,7 +163,7 @@
           </div>
 
           <div class="link-menu link-container center ">
-            <div class="menu menu-vert width-s">
+            <div class="menu menu-vert container-xs">
               <i class="fas fa-window-restore font-icon  font-icon-xl blue icon-xl"></i>
               <span class="xl-size dotted white bold">Системное администрирование</span>
             </div>
@@ -193,14 +209,17 @@
             </div>
           </div>
           <div class="link-menu link-container center ">
-            <div class="menu menu-vert width-s">
+            <div class="menu menu-vert container-xs">
               <i class="far fa-file-alt font-icon font-icon-xl blue icon-xl"></i>
               <span class="xl-size dotted white bold">Контент Менеджмент</span>
             </div>
             <div class="services-item menu menu-vert">
               <div class="triangle"></div>
-              <div class="link-menu link-container link-container-between container-bg-white">
-                <div class="menu menu-vert start  pad-s flex ">
+              <div class="link-menu link-container link-container-between container-bg-white ">
+                <span class="grey-blue l-size text-grey text-center services-desc-head pad-s">
+                  Наполняем сайт контентом.
+                </span>
+                <div class=" menu-vert  pad-s  ">
                   <div class="link-menu">
                     <i class="fas fa-long-arrow-alt-right blue xl-size "></i>
                     <span class="l-size grey">Наполнение сайта информацией</span>
@@ -228,7 +247,7 @@
 
           </div>
           <div class="link-menu link-container center ">
-            <div class="menu menu-vert width-s">
+            <div class="menu menu-vert container-xs">
               <i class="fas fa-code-branch font-icon font-icon-xl blue icon-xl"></i>
               <span class="xl-size dotted white bold">Поступательное движение проекта вверх</span>
 
@@ -262,9 +281,9 @@
       <div class="container">
         <div class="menu-vert">
           <div class="competence-ls menu menu-between">
-            <div class="competence-item link-menu link-container center link-container-row flex">
+            <div class=" link-menu link-container center link-container-row flex competence-item">
               <img src="images/main-services2-icon.png" alt="">
-              <div class="menu-vert">
+              <div class=" menu-vert">
                 <div class="link-menu">
                   <div class="menu center">
                     <i class="fas fa-long-arrow-alt-right xl-size red"></i>
@@ -285,7 +304,7 @@
                 </div>
               </div>
             </div>
-            <div class="competence-item link-menu link-container center link-container-row flex">
+            <div class="link-menu link-container center link-container-row flex competence-item">
               <img src="images/main-services2-icon3.png" alt="">
               <div class="menu-vert">
                 <div class="link-menu">
@@ -311,7 +330,7 @@
             </div>
           </div>
           <div class="competence-ls menu menu-between">
-            <div class="competence-item link-menu link-container center link-container-row flex">
+            <div class="link-menu link-container center link-container-row flex competence-item">
               <img src="images/main-services2-icon2.png" alt="">
               <div class="menu-vert">
                 <div class="link-menu">
@@ -325,7 +344,7 @@
                 </div>
               </div>
             </div>
-            <div class="competence-item link-menu link-container center link-container-row flex">
+            <div class="link-menu link-container center link-container-row flex competence-item">
               <img src="images/main-services2-icon4.png" alt="">
               <div class="menu-vert">
                 <div class="link-menu">
@@ -354,7 +373,7 @@
           <span class="title title-big white">Почему мы?</span>
         </div>
       </div>
-      </div>
+    </div>
     <div class="advantages-list">
       <div class="container">
         <div class="menu menu-fs menu-vert">
@@ -492,7 +511,7 @@
       </div>
     </div>
     <div class="tariff-main-table">
-      <div class="container">
+      <div class="container tariff-main-container">
         <table class="tariff-table table-non-empty" cellpadding="0" cellspacing="0">
           <tr class="tariff-table-head">
             <th class="bordered-null"> </th>
@@ -525,14 +544,14 @@
           <tr>
             <td class="bottom-bordered l-size medium tariff-table-pad-medium">Безопасность</td>
             <th class="bottom-left-bordered l-size light" bgcolor="#e7ebec">
-              <table bgcolor="#FFF" class="tariff-table">
+              <!-- <table bgcolor="#FFF" class="tariff-table">
                 <tr>
                   <th>&nbsp;</th>
                 </tr>
                 <tr>
                   <th>&nbsp;</th>
                 </tr>
-              </table>
+              </table> -->
             </th>
             <th class="bottom-bordered l-size light tariff-table-pad-medium">
 
@@ -582,25 +601,25 @@
               <td class="bordered-null l-size medium tariff-table-pad-large">Цена руб.\мес.</td>
               <th class="button-container bottom-left-bordered l-size light tariff-table-pad-large">
                 <div class="link-container">
-                  <span class="xxl-size">3 900</span>
+                  <span class="xxl-size tariff-count">3 900</span>
                   <button class="tariff-button light-green-bg white xl-size button-l">Купить</button>
                 </div>
               </th>
               <th class="button-container bottom-bordered l-size light tariff-table-pad-large">
                 <div class="link-container">
-                  <span class="xxl-size">12 000</span>
+                  <span class="xxl-size tariff-count">12 000</span>
                   <button class="tariff-button light-green-bg white xl-size button-l">Купить</button>
                 </div>
               </th>
               <th class="button-container bottom-bordered l-size light tariff-table-pad-large">
                 <div class="link-container">
-                  <span class="xxl-size">7000</span>
+                  <span class="xxl-size tariff-count">7000</span>
                   <button class="tariff-button light-green-bg white xl-size button-l">Купить</button>
                 </div>
               </th>
               <th class="button-container bottom-right-bordered l-size light tariff-table-pad-large">
                 <div class="link-container">
-                  <span class="xxl-size">30 000</span>
+                  <span class="xxl-size tariff-count">30 000</span>
                   <button class="tariff-button light-green-bg white xl-size button-l">Купить</button>
                 </div>
               </th>
@@ -612,11 +631,14 @@
   </section>
 
   <section class="page__work-order">
-    <div class="container">
-      <div class="work-order-title title-container">
-        <span class="title title-big white">Порядок работы</span>
+    <div class="work-order-title">
+      <div class="container">
+        <div class=" title-container">
+          <span class="title title-big white">Порядок работы</span>
+        </div>
       </div>
     </div>
+
     <div class="order-list">
       <div class="menu menu-vert">
         <div class="order-item menu">
@@ -650,33 +672,32 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="menu-start .menu-fs">
-        <div class="work-order-title2 title-container">
-          <span class="title title-big white">Документы</span>
-          <span class="title title-big white">и оплата</span>
-        </div>
-        <div class="work-order-info ">
-          <span class="text-xl underline light upper white">Возможна работа по следующим вариантам</span>
-          <div class="work-order-info-list menu">
-            <div class="work-order-info-item menu">
-              <i class="fas fa-file-alt font-icon-l white"></i>
-              <div class="link-container">
-                <span class="xl-size light white">Оплачивая первую </span>
-                <span class="xl-size light white">заявку, вы акцептируете</span>
-                <span class="xl-size light white">договор-оферту</span>
+    <div class="order-title-low">
+      <div class="container">
+        <div class="order-title-low-container menu-start .menu-fs">
+          <div class="work-order-title2 title-container width-m">
+            <span class="title title-big white">Документы и оплата</span>
+          </div>
+          <div class="work-order-info ">
+            <span class="text-xl underline light upper white">Возможна работа по следующим вариантам</span>
+            <div class="work-order-info-list menu">
+              <div class="work-order-info-item menu">
+                <i class="fas fa-file-alt font-icon-l white"></i>
+                <div class="link-container">
+                  <span class="xl-size light white">Оплачивая первую </span>
+                  <span class="xl-size light white">заявку, вы акцептируете</span>
+                  <span class="xl-size light white">договор-оферту</span>
 
+                </div>
               </div>
-            </div>
-            <div class="menu work-order-info-item">
-              <i class="fas fa-file-alt font-icon-l white"></i>
-              <div class="link-container">
-                <span class="xl-size light white">Заключаем договор</span>
-                <span class="xl-size light white">технической поддержки,</span>
-                <span class="xl-size light white">оформляем акты</span>
-                <span class="xl-size light white">выполненных работ</span>
-
-
+              <div class="menu work-order-info-item">
+                <i class="fas fa-file-alt font-icon-l white"></i>
+                <div class="link-container">
+                  <span class="xl-size light white">Заключаем договор</span>
+                  <span class="xl-size light white">технической поддержки,</span>
+                  <span class="xl-size light white">оформляем акты</span>
+                  <span class="xl-size light white">выполненных работ</span>
+                </div>
               </div>
             </div>
           </div>
@@ -693,7 +714,7 @@
       </div>
     </div>
     <div class="prices-main-table">
-      <div class="container">
+      <div class="prices-container container">
         <table class="prices-table" cellpadding="0" cellspacing="0">
           <tr>
             <th class="bottom-top-left-right-bordered-blue text-m dark-blue prices-table-pad-large">Задача</th>
@@ -778,83 +799,86 @@
   </section>
 
   <section class="page__customs">
-    <div class="container">
-      <div class="customs-title title-container">
-        <span class="title title-big white">Что нам часто</span>
-        <span class="title title-big white">Приходится делать</span>
+    <div class="customs-title">
+      <div class="container">
+        <div class=" title-container">
+          <span class="title title-big white">Что нам часто Приходится делать</span>
+        </div>
       </div>
     </div>
 
     <div class="customs-list">
       <div class="container">
-        <div class="customs-item menu menu-around">
-          <div class="link-menu link-container  center flex">
+        <div class="customs-menu menu menu-around wrap">
+          <div class="customs-item link-menu link-container  center container-m menu menu-between">
             <i class="far fa-image font-icon font-icon-l grey shadow"></i>
-            <span class="text-xs white medium">Нарисовать и разместить</span>
-            <span class="text-xs white medium">рекламный баннер на сайте</span>
+            <div>
+              <span class="text-xs white medium">Нарисовать и разместить рекламный баннер на сайте</span>
+
+            </div>
 
           </div>
-          <div class="link-menu link-container center flex">
+          <div class="customs-item link-menu link-container center container-m menu menu-around">
             <i class="far fa-image font-icon font-icon-l grey shadow"></i>
-            <span class="text-xs white medium">Ускорение работы сайта.</span>
-            <span class="text-xs white medium">Решаем проблемы</span>
-            <span class="text-xs white medium">быстродействия страниц</span>
+            <div>
+              <span class="text-xs white medium">Ускорение работы сайта.Решаем проблемы быстродействия страниц</span>
+
+            </div>
           </div>
-          <div class="link-menu link-container center flex">
+          <div class="customs-item link-menu link-container center container-m menu menu-around">
             <i class="fas fa-tv font-icon font-icon-l grey shadow"></i>
-            <span class="text-xs white medium">Интеграция каталога</span>
-            <span class="text-xs white medium">товаров с 1С</span>
+            <div>
+              <span class="text-xs white medium">Интеграция каталога товаров с 1С</span>
+
+            </div>
 
           </div>
-          <div class="link-menu link-container center flex">
+          <div class="customs-item link-menu link-container center container-m menu menu-around ">
             <i class="far fa-compass font-icon font-icon-l grey shadow"></i>
-            <span class="text-xs white medium">Добавить распознавание региона</span>
-            <span class="text-xs white medium">посетителя регионозависимость,</span>
-            <span class="text-xs white medium"> геозависимость на сайте</span>
+            <div>
+              <span class="text-xs white medium">Добавить распознавание региона посетителя регионозависимость, геозависимость на сайте</span>
+            </div>
 
           </div>
-          <div class="link-menu link-container center flex">
+          <div class="customs-item link-menu link-container center container-m menu menu-around">
             <i class="far fa-sun font-icon font-icon-l grey shadow"></i>
-            <span class="text-xs white medium">Настроить</span>
-            <span class="text-xs white medium">человеко-понятные</span>
-            <span class="text-xs white medium">адреса страниц сайта</span>
+            <div>
+              <span class="text-xs white medium">Настроить человеко-понятные адреса страниц сайта</span>
+            </div>
 
           </div>
-        </div>
-        <div class="customs-item menu menu-around">
-          <div class="link-menu link-container center flex">
+          <div class="customs-item link-menu link-container center container-m menu menu-around">
             <i class="far fa-compass font-icon font-icon-l grey shadow"></i>
-            <span class="text-xs white medium">Нарисовать и разместить</span>
-            <span class="text-xs white medium">рекламный баннер на сайте</span>
+            <div>
+              <span class="text-xs white medium">Нарисовать и разместить рекламный баннер на сайте</span>
+            </div>
 
           </div>
-          <div class="link-menu link-container center flex">
+          <div class="customs-item link-menu link-container center container-m menu menu-around">
             <i class="far fa-sun font-icon font-icon-l grey shadow"></i>
-            <span class="text-xs white medium dotted">Сделать сайт адаптивным</span>
-            <span class="text-xs white light">При клике выезжает текст,</span>
-            <span class="text-xs white light">поясняющий/раскрывающий</span>
-            <span class="text-xs white light">выбранный пункт</span>
+            <div>
+              <span class="text-xs white medium dotted">Сделать сайт адаптивным При клике выезжает текст, поясняющий/раскрывающий выбранный пункт</span>
+            </div>
 
 
           </div>
-          <div class="link-menu link-container center flex">
+          <div class="customs-item link-menu link-container center container-m menu menu-around">
             <i class="far fa-window-maximize font-icon font-icon-l grey shadow"></i>
-            <span class="text-xs white medium">Интеграция каталога </span>
-            <span class="text-xs white medium">товаров с 1С</span>
+            <div>
+              <span class="text-xs white medium">Интеграция каталога товаров с 1С </span>
+            </div>
 
           </div>
-          <div class="link-menu link-container center flex">
+          <div class="customs-item link-menu link-container center container-m menu menu-around">
             <i class="far fa-image font-icon font-icon-l grey shadow"></i>
-            <span class="text-xs white medium">Добавить распознавание региона</span>
-            <span class="text-xs white medium">посетителя регионозависимость,</span>
-            <span class="text-xs white medium">геозависимость на сайте</span>
+            <div>
+              <span class="text-xs white medium">Добавить распознавание региона посетителя регионозависимость, геозависимость на сайте</span>
+            </div>
 
           </div>
-          <div class="link-menu link-container center flex">
+          <div class="customs-item link-menu link-container center container-m  menu menu-around">
             <i class="fas fa-tv font-icon font-icon-l grey shadow"></i>
-            <span class="text-xs white medium">Настроить </span>
-            <span class="text-xs white medium">человеко-понятные</span>
-            <span class="text-xs white medium">адреса страниц сайта</span>
+            <span class="text-xs white medium">Настроить человеко-понятные адреса страниц сайта</span>
           </div>
         </div>
       </div>
@@ -875,7 +899,7 @@
     </div>
     <div class="team-members">
       <div class="container">
-        <div class="menu menu-between">
+        <div class="team-list menu menu-between ">
           <div class="link-menu link-container center">
             <img src="images/team1.png" alt="">
             <span class="text bold-fat text-s grey">Аркадий</span>
@@ -977,9 +1001,9 @@
 
   <section class="page__contacts">
     <div class="center-area">
-      <span class="title title-xl black">Остались вопросы?</span>
+      <span class="contacts-title title title-xl black">Остались вопросы?</span>
       <div class="link-container  center link-container-row ">
-        <span class="title title-l red">8 910 743 83 79</span>
+        <span class="title xxl-size bold-fat red">8 910 743 83 79</span>
         <button class="button button-red button-xl l-size">Связаться с нами</button>
       </div>
     </div>

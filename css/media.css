@@ -1,3 +1,9 @@
+@media screen and (min-width: 768px) {
+  .mobile__logo {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1160px) {
   .services-menu .menu {
     flex-wrap: wrap;
@@ -11,26 +17,35 @@
   .toggle {
     display: block;
   }
+  .header-menu-mobile {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    top: 100px;
+    text-align: center;
+    flex-direction: column;
+  }
+  .active {
+    display: flex;
+  }
+  .page__header__logo {
+    display: none;
+  }
   .page__header__menu {
     width: 100%;
     flex-direction: column;
+  }
+  .header-menu-desktop {
     display: none;
   }
   .page__header__menu a {
     margin: 1rem 0;
   }
   .page__header__logo {
-    /* display: none; */
     text-align: center;
-  }
-  .page__header__buttons {
-    /* display: none; */
   }
   .header-content {
     flex-direction: column;
-  }
-  .active {
-    display: flex;
   }
   .slider-menu {
     flex-direction: column;
@@ -44,24 +59,80 @@
   .tariff-menu-list {
     flex-direction: column;
   }
+  .tariff-menu-item {
+    width: 100%;
+  }
   .menu {
     flex-wrap: wrap;
+  }
+  .order-title-low-container {
+    flex-direction: column;
+  }
+  .work-order-info, .work-order-title2 {
+    margin: 2rem 0 0 0;
+  }
+  .prices-table {
+    margin: 0;
   }
 }
 
 @media screen and (max-width: 414px) {
-  .page__competence .competence-item {
+  .title-big {
+    font-size: 1.6rem;
+  }
+  .text-xxl {
+    font-size: 1.8rem;
+  }
+  .button_menu {
+    padding: 1rem;
+  }
+ .competence-item {
     flex-direction: column;
   }
   .page__tariff-main .tariff-main-title2, .page__tariff-head .tariff-head-title2 {
     margin-left: 0;
   }
-  .page__work-order .order-item {
+  .order-item {
     flex-direction: column;
-    /* flex: 0; */
   }
-
   .left-circle, .line, .right-circle {
     display: none;
+  }
+  .team-list {
+    justify-content: center;
+  }
+  .question-container, .question-answer {
+    margin: 0;
+  }
+  .contacts-title {
+    text-align: center;
+  }
+  .prices-container {
+    margin: 0;
+  }
+  .tariff-table-pad-large, .tariff-table-pad-medium {
+    padding: 0;
+  }
+  .prices-table-pad-large, .prices-table-pad-medium, .prices-table-pad-small {
+    padding: 0;
+  }
+  table .l-size {
+    font-size: 0.6rem;
+  }
+  table .xl-size {
+    font-size: 0.8rem;
+  }
+  .tariff-count {
+    font-size: 1rem;
+  }
+  .font-icon-green, .font-icon-grey {
+    padding: 0.2rem;
+  }
+  .tariff-main-container {
+    margin: 0;
+  }
+  .button-l {
+    padding: 0.1rem;
+    left: 10%;
   }
 }
