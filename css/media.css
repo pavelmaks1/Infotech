@@ -1,3 +1,9 @@
+@media screen and (max-width: 1024px) {
+  .customs-item {
+    min-width: 15rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .mobile__logo {
     display: none;
@@ -76,7 +82,7 @@
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 415px) {
   .title-big {
     font-size: 1.6rem;
   }
@@ -116,10 +122,10 @@
   .prices-table-pad-large, .prices-table-pad-medium, .prices-table-pad-small {
     padding: 0;
   }
-  table .l-size {
+  .tariff-table .l-size {
     font-size: 0.6rem;
   }
-  table .xl-size {
+  .tariff-table .xl-size {
     font-size: 0.8rem;
   }
   .tariff-count {
