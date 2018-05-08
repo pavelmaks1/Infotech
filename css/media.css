@@ -68,7 +68,7 @@
   .tariff-menu-item {
     width: 100%;
   }
-  .menu {
+  .team-list {
     flex-wrap: wrap;
   }
   .order-title-low-container {
@@ -92,7 +92,7 @@
   .button_menu {
     padding: 1rem;
   }
- .competence-item {
+  .competence-item {
     flex-direction: column;
   }
   .page__tariff-main .tariff-main-title2, .page__tariff-head .tariff-head-title2 {
@@ -101,6 +101,12 @@
   .order-item {
     flex-direction: column;
   }
+  .order-item:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .work-order-info-item {
+    margin: 2rem 0;
+  } 
   .left-circle, .line, .right-circle {
     display: none;
   }
@@ -112,6 +118,9 @@
   }
   .contacts-title {
     text-align: center;
+  }
+  .contacts-buttons {
+    flex-direction: column;
   }
   .prices-container {
     margin: 0;

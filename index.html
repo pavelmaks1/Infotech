@@ -14,7 +14,7 @@
   <title>Инфо Техподдержка</title>
 </head>
 
-<body class="page">
+<body class="page" style="overflow-x:hidden;">
   <header class="page__header">
     <div class="header-content">
       <div class="mobile__logo">
@@ -80,9 +80,9 @@
       </div>
     </div>
     <div class="slider-main">
-      <img src="images/slider-img.png" alt="" class="slider-img text-center">
-
+      <img src="images/slider-img.png" alt="" class="slider-img text-center"/>
     </div>
+
     <div class="slider-menu">
       <div class="menu slider-menu-list">
         <div class="link_menu link-container center">
@@ -109,7 +109,7 @@
       </div>
     </div>
     <div class="slider__button">
-      <button class="button button-red button-xl l-size">Присоединиться к успеху</button>
+      <button class="button button-red button-xl l-size slider-button">Присоединиться к успеху</button>
     </div>
   </section>
 
@@ -282,7 +282,7 @@
         <div class="menu-vert">
           <div class="competence-ls menu menu-between">
             <div class=" link-menu link-container center link-container-row flex competence-item">
-              <img src="images/main-services2-icon.png" alt="">
+              <img src="images/main-services2-icon.png" alt="" class="width-m">
               <div class=" menu-vert">
                 <div class="link-menu">
                   <div class="menu center">
@@ -305,7 +305,7 @@
               </div>
             </div>
             <div class="link-menu link-container center link-container-row flex competence-item">
-              <img src="images/main-services2-icon3.png" alt="">
+              <img src="images/main-services2-icon3.png" alt="" class="width-m">
               <div class="menu-vert">
                 <div class="link-menu">
                   <div class="menu center">
@@ -330,8 +330,8 @@
             </div>
           </div>
           <div class="competence-ls menu menu-between">
-            <div class="link-menu link-container center link-container-row flex competence-item">
-              <img src="images/main-services2-icon2.png" alt="">
+            <div class="link-menu link-container center link-container-row flex competence-item ">
+              <img src="images/main-services2-icon2.png" alt=""  class="width-m">
               <div class="menu-vert">
                 <div class="link-menu">
                   <div class="menu center">
@@ -345,7 +345,7 @@
               </div>
             </div>
             <div class="link-menu link-container center link-container-row flex competence-item">
-              <img src="images/main-services2-icon4.png" alt="">
+              <img src="images/main-services2-icon4.png" alt=""  class="width-m">
               <div class="menu-vert">
                 <div class="link-menu">
                   <div class="menu center">
@@ -366,7 +366,7 @@
     </div>
   </section>
 
-  <section class="page__advantages">
+  <section class="page__advantages" style="display:none">
     <div class="advantages-title">
       <div class="container">
         <div class="customs-title title-container">
@@ -377,7 +377,7 @@
     <div class="advantages-list">
       <div class="container">
         <div class="menu menu-fs menu-vert wrap">
-          <div class="advantages-item menu center">
+          <div class="advantages-item menu center wrap">
             <i class="fas fa-long-arrow-alt-right font-icon-xl white"></i>
             <div class="advantages-item-text link-container start ">
               <div>
@@ -390,7 +390,7 @@
 
             </div>
           </div>
-          <div class="advantages-item menu center">
+          <div class="advantages-item menu center wrap">
             <i class="fas fa-long-arrow-alt-right font-icon-xl white"></i>
             <div class="advantages-item-text link-container start ">
 
@@ -400,7 +400,7 @@
 
             </div>
           </div>
-          <div class="advantages-item menu center">
+          <div class="advantages-item menu center wrap">
             <i class="fas fa-long-arrow-alt-right font-icon-xl white"></i>
             <div class="advantages-item-text link-container start ">
 
@@ -637,9 +637,8 @@
       </div>
     </div>
 
-    <div class="order-list">
-      <div class="menu menu-vert">
-        <div class="order-item menu">
+      <div class="order-list menu menu-vert">
+        <div class="order-item menu order-item">
           <span class="xl-size white light flex text-right ">Вы оставляете заявку на сайте</span>
           <div class="left-circle white-bg"></div>
           <div class="line white-bg"></div>
@@ -669,16 +668,15 @@
           <span class="xl-size white light flex text-left">Вы оставляете заявку на сайте</span>
         </div>
       </div>
-    </div>
     <div class="order-title-low">
       <div class="container">
-        <div class="order-title-low-container menu-start .menu-fs">
+        <div class="order-title-low-container menu-start .menu-fs ">
           <div class="work-order-title2 title-container width-m">
             <span class="title title-big white">Документы и оплата</span>
           </div>
           <div class="work-order-info ">
             <span class="text-xl underline light upper white">Возможна работа по следующим вариантам</span>
-            <div class="work-order-info-list menu">
+            <div class="work-order-info-list menu wrap">
               <div class="work-order-info-item menu">
                 <i class="fas fa-file-alt font-icon-l white"></i>
                 <div class="link-container">
@@ -1000,8 +998,8 @@
   <section class="page__contacts">
     <div class="center-area">
       <span class="contacts-title title title-xl black">Остались вопросы?</span>
-      <div class="link-container  center link-container-row ">
-        <span class="title xxl-size bold-fat red">8 910 743 83 79</span>
+      <div class="link-container  center link-container-row contacts-buttons">
+        <span class="title xxl-size bold-fat red contacts-number">8 910 743 83 79</span>
         <button class="button button-red button-xl l-size">Связаться с нами</button>
       </div>
     </div>
