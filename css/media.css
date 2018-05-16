@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width: 1160px) {
-  .services-menu .menu {
+  .services-menu .services-container {
     flex-wrap: wrap;
   }
   .page__competence .competence-ls {
@@ -71,6 +71,9 @@
   .team-list {
     flex-wrap: wrap;
   }
+  .order-list {
+    margin-top: 30%;
+  }
   .order-title-low-container {
     flex-direction: column;
   }
@@ -101,6 +104,11 @@
   .order-item {
     flex-direction: column;
   }
+  .order-text {
+    text-align: left;
+    font-weight: 300;
+    padding: 1rem 0;
+  }
   .order-item:nth-child(even) {
     flex-direction: column-reverse;
   }
@@ -115,6 +123,9 @@
   }
   .question-container, .question-answer {
     margin: 0;
+  }
+  .question-item span {
+    font-size: 1.1rem;
   }
   .contacts-title {
     text-align: center;
@@ -144,6 +155,9 @@
     padding: 0.2rem;
   }
   .tariff-main-container {
+    margin: 0;
+  }
+  .customs-button {
     margin: 0;
   }
   .button-l {
