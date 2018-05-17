@@ -1,0 +1,30 @@
+.services {
+    margin-top: 50px;
+}
+
+.services-head-container {
+    position: relative;
+}
+
+
+.services-slider-item {}
+
+.services-slider-item:hover .services-item-content {
+    background: #2FC7F8;
+}
+
+.services-slider-item:hover .services-slider-text {
+    color: white;
+    font-weight: 700;
+}
+
+.services-slider-item:hover .triangle-down {
+    background: #2FC7F8;
+}
+
+@media screen and (max-width: 415px) {
+    .services-content-item span {
+        font-size: 1.1rem;
+    }
+
+}

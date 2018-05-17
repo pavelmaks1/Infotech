@@ -20,6 +20,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  .header-item {
+    margin: 1rem 0;
+  }
+  .button_menu {
+    padding: 1rem;
+  }
   .toggle {
     display: block;
   }
@@ -27,9 +33,7 @@
     display: none;
     position: absolute;
     background-color: #fff;
-    top: 100px;
-    text-align: center;
-    flex-direction: column;
+    top: 17%;
   }
   .active {
     display: flex;
@@ -92,9 +96,6 @@
   .text-xxl {
     font-size: 1.8rem;
   }
-  .button_menu {
-    padding: 1rem;
-  }
   .competence-item {
     flex-direction: column;
   }
@@ -114,7 +115,7 @@
   }
   .work-order-info-item {
     margin: 2rem 0;
-  } 
+  }
   .left-circle, .line, .right-circle {
     display: none;
   }
@@ -126,12 +127,6 @@
   }
   .question-item span {
     font-size: 1.1rem;
-  }
-  .contacts-title {
-    text-align: center;
-  }
-  .contacts-buttons {
-    flex-direction: column;
   }
   .prices-container {
     margin: 0;
@@ -151,6 +146,9 @@
   .tariff-count {
     font-size: 1rem;
   }
+  .tariff-menu-item {
+    margin: 1rem 0;
+  }
   .font-icon-green, .font-icon-grey {
     padding: 0.2rem;
   }
@@ -163,5 +161,20 @@
   .button-l {
     padding: 0.1rem;
     left: 10%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .header-menu-mobile {
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .contacts-title {
+    text-align: center;
+  }
+  .contacts-buttons {
+    flex-direction: column;
   }
 }
