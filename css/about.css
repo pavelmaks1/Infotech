@@ -1,0 +1,40 @@
+.about-head-container {
+    position: relative;
+}
+
+.about {
+    margin-top: 50px;
+}
+
+.about-content-item {
+    margin: 0.5rem 0;
+}
+
+.about-images {
+    margin-top: 3rem;
+}
+
+.about-head {
+    margin: 2rem 0;
+}
+
+.page__contacts {
+    margin-top: 100px;
+}
+
+.about-image {
+    margin: 0 1rem;
+}
+
+@media screen and (max-width: 415px) {
+    .about-content-item span {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .about-image {
+        margin: 2rem 0;
+    }
+}

@@ -4,6 +4,13 @@
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .team-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .mobile__logo {
     display: none;
@@ -34,6 +41,7 @@
     position: absolute;
     background-color: #fff;
     top: 17%;
+    z-index: 100;
   }
   .active {
     display: flex;
@@ -71,9 +79,6 @@
   }
   .tariff-menu-item {
     width: 100%;
-  }
-  .team-list {
-    flex-wrap: wrap;
   }
   .order-list {
     margin-top: 30%;

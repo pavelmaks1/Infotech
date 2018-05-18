@@ -60,6 +60,10 @@ ul {
   color: red;
 }
 
+.light-red {
+  color: #F23A5A;
+}
+
 .black {
   color: black;
 }
@@ -136,6 +140,10 @@ ul {
 
 .m-size {
   font-size: 1.4rem;
+}
+
+.xm-size {
+  font-size: 1.3rem;
 }
 
 .xl-size {
@@ -331,6 +339,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  list-style: none;
 }
 
 .menu-b {
@@ -369,6 +378,10 @@ ul {
   flex: 1;
   display: flex;
   justify-content: center;
+}
+
+.center-align {
+  margin: 0 auto;
 }
 
 .button_menu {
@@ -807,6 +820,11 @@ table {
   border-bottom: 4px solid white;
 }
 
+.underline-standart {
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+
 .container-bg-white {
   width: 270px;
   background: white;
@@ -882,7 +900,7 @@ table {
   padding: 0 0;
 }
 
-.order-list span, img {
+.order-list span, .order-list img {
   margin: 0 2rem;
 }
 
