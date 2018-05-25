@@ -57,7 +57,7 @@ ul {
 }
 
 .red {
-  color: red;
+  color: #f91831;
 }
 
 .light-red {
@@ -199,6 +199,10 @@ ul {
   max-width: 450px;
 }
 
+.width-xl-static {
+  width: 450px;
+}
+
 .width-xxl {
   max-width: 650px;
 }
@@ -272,7 +276,7 @@ ul {
 }
 
 .line--l {
-  height: 300px;
+  height: 400px;
 }
 
 .circle {
@@ -408,10 +412,16 @@ ul {
 }
 
 .button-red {
-  background: red;
+  background: #f91831;
   color: white;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+.button-red:hover {
+  background: white;
+  border: 1px solid #A61424;
+  color: #FC1A33;
 }
 
 .button-white {
@@ -423,7 +433,7 @@ ul {
 }
 
 .button-round {
-  border-radius: 25%;
+  border-radius: 20px;
 }
 
 .button-xl {
@@ -431,8 +441,7 @@ ul {
 }
 
 .button-xl-horizontal {
-  line-height: 5;
-  padding: 0 3rem;
+  padding: 0.7rem 2rem;
 }
 
 .button-l {
@@ -547,7 +556,9 @@ ul {
 
 .font-icon-standart {
   border-radius: 100%;
-  padding: 1.2rem;
+  width: 50px;
+  height: 50px;
+  padding: 1.1rem;
 }
 
 .font-icon-green {
@@ -665,6 +676,20 @@ ul {
   border-radius: 5%;
   height: 300px;
   width: 30%;
+}
+
+.tariff-menu-item:hover {
+  background: #1fbaeb;
+  cursor: pointer;
+}
+
+.tariff-menu-item:hover .tariff-item-body span {
+  color: white;
+}
+
+.tariff-menu-item:hover button {
+  background: white;
+  color: #1fbaeb;
 }
 
 .tariff-item-head {
@@ -932,6 +957,10 @@ table {
 .bottom-top-right-bordered-blue {
   border-bottom: 3px solid #274b96;
   border-top: 3px solid #274b96;
+  border-right: 3px solid #274b96;
+}
+
+.right-bordered-blue {
   border-right: 3px solid #274b96;
 }
 
