@@ -20,6 +20,14 @@ ul {
   margin: 0 5%;
 }
 
+.pos-r {
+  position: relative;
+}
+
+.display {
+  display: none;
+}
+
 .white {
   color: white;
 }
@@ -412,6 +420,7 @@ ul {
 }
 
 .button-red {
+  border: 1px solid #f91831;
   background: #f91831;
   color: white;
   font-weight: 300;
@@ -714,9 +723,14 @@ ul {
 
 .tariff-button {
   position: absolute;
-  top: 60%;
-  left: 28%;
-  margin: 2rem 0 0 0;
+  bottom: 20%;
+  left: 15%;
+  width: 70%;
+  cursor: pointer;
+}
+
+.tariff-button:hover {
+  background: #6e9822;
 }
 
 .page__tariff-main {}
@@ -1079,6 +1093,12 @@ table {
 
 .question-item {
   margin: 2rem 0;
+}
+
+.question-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .question-answer {

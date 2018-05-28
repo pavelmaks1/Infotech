@@ -7,7 +7,10 @@
 }
 
 
-.services-slider-item {}
+.services-content-menu {
+  list-style: none;
+  text-align: left;
+}
 
 .services-slider-item:hover .services-item-content {
     background: #2FC7F8;
@@ -21,8 +24,6 @@
 .services-slider-item:hover .triangle-down {
     background: #2FC7F8;
 }
-
-
 
 @media screen and (max-width: 415px) {
     .services-content-item span {

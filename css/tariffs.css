@@ -1,54 +1,58 @@
 .tariffs-head {
-    background: url('../images/slider-bg.jpg') no-repeat center bottom /cover;
+  background: url('../images/slider-bg.jpg') no-repeat center bottom /cover;
 }
 
 .tariffs-head-item {
-    padding: 1rem;
-    margin: 4rem;
+  padding: 1rem;
+  margin: 4rem;
 }
 
 .title-container--slim {
-    border-left: 5px solid white;
+  border-left: 5px solid white;
 }
 
 .tariffs-head-item-pad {
-    padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
-.tariffs-head-item:hover span {
-    text-decoration: underline;
-    cursor: pointer;
+.tariffs-head-item a {
+  text-decoration: none;
+}
+
+.tariffs-head-item:hover a {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .tariffs-title {
-    position: relative;
-    padding: 0 0 0.2rem 0;
-    max-width: 1000px;
-    margin: 0 auto;
+  position: relative;
+  padding: 0 0 0.2rem 0;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .button-salad-green {
-    background: #AAD41E;
+  background: #AAD41E;
 }
 
 .page__contacts {
-    margin-top: 150px;
+  margin-top: 150px;
 }
 
 .border-color-grey {
-    border-color: #e7ebec;
+  border-color: #e7ebec;
 }
 
 .prices-bg-grey {
-    background: #e7ebec;
+  background: #e7ebec;
 }
 
 @media screen and (max-width: 768px) {
-    .tariffs-head-menu {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .tariffs-head-item {
-        margin: 1rem;
-    }
+  .tariffs-head-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .tariffs-head-item {
+    margin: 1rem;
+  }
 }
