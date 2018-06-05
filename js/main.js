@@ -1,6 +1,5 @@
 $(() => {
     $('.toggle').click(() => {
-        console.log('toggle');
         $('.header-menu-mobile').toggleClass('active');
 
     })
@@ -11,5 +10,13 @@ $(() => {
     $(this).on('click', function() {
       $(this).children('.question-answer').toggleClass('display');
     })
+  });
+
+  $('.button-more').on('click', function() {
+    $('.customs-additional').toggleClass('display');
+   if ($('.button-text').html() === 'Больше') {
+     $('.button-text').html("Скрыть")
+   } else if ($('.button-text').html() === 'Скрыть') {
+   }
   })
 })

@@ -12,6 +12,10 @@
   text-align: left;
 }
 
+.services-slider-content {
+    min-height: 200px;
+}
+
 .services-slider-item:hover .services-item-content {
     background: #2FC7F8;
 }

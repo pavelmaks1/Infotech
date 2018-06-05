@@ -32,6 +32,15 @@
   }
 }
 
+@media screen and (max-width: 954px) {
+  .tariff-table th, .tariff-table td {
+    padding: 1rem 0;
+  }
+  .button-l {
+    padding: 0.5rem 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header-item {
     margin: 1rem 0;
@@ -77,6 +86,9 @@
   .advantages-ls {
     flex-direction: column;
   }
+  .tariff-table {
+    overflow-x: scroll;
+  }
   .tariff-title-list {
     flex-direction: column;
   }
@@ -98,15 +110,36 @@
   .prices-table {
     margin: 0;
   }
+  .tariff-table .l-size {
+    font-size: 0.6rem;
+  }
+  .tariff-table .xl-size {
+    font-size: 0.8rem;
+  }
+  .tariff-count {
+    font-size: 1rem;
+  }
+  .tariff-menu-item {
+    margin: 1rem 0;
+  }
+  .button-l {
+    padding: 0.1rem;
+  }
+  .font-icon-green, .font-icon-grey {
+    padding: 0.2rem;
+  }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 540px) {
   .title-big {
     font-size: 1.6rem;
   }
   .text-xxl {
     font-size: 1.8rem;
   }
+}
+
+@media screen and (max-width: 415px) {
   .competence-item {
     flex-direction: column;
   }
@@ -142,36 +175,21 @@
   .prices-container {
     margin: 0;
   }
+  .tariff-table {
+    display: block;
+    overflow-x: scroll;
+  }
   .tariff-table-pad-large, .tariff-table-pad-medium {
     padding: 0;
   }
   .prices-table-pad-large, .prices-table-pad-medium, .prices-table-pad-small {
     padding: 0;
   }
-  .tariff-table .l-size {
-    font-size: 0.6rem;
-  }
-  .tariff-table .xl-size {
-    font-size: 0.8rem;
-  }
-  .tariff-count {
-    font-size: 1rem;
-  }
-  .tariff-menu-item {
-    margin: 1rem 0;
-  }
-  .font-icon-green, .font-icon-grey {
-    padding: 0.2rem;
-  }
   .tariff-main-container {
     margin: 0;
   }
   .customs-button {
     margin: 0;
-  }
-  .button-l {
-    padding: 0.1rem;
-    left: 10%;
   }
 }
 
@@ -187,5 +205,8 @@
   }
   .contacts-buttons {
     flex-direction: column;
+  }
+  .container {
+    padding: 0 5%;
   }
 }
